@@ -1,14 +1,13 @@
-import enum
-
-class WorkoutType(enum.Enum) :
-    BASE = 1
-    INTERVALS = 2
-    LONG_RUN = 3
-    RECOVERY_RUN = 4
-    REST = 5
-    SPEED = 6
+import utils
 
 class Workout() :
 
-    def __init__(self, workout_type : WorkoutType) :
-        self. workout_type = workout_type
+  def __init__(self, workout_type : utils.WorkoutType) :
+    self.workout_type = workout_type
+
+  def __str__(self) :
+    return self.workout_type.name
+  
+if __name__ == "__main__":
+  test_workout = Workout(utils.WorkoutType.BASE)
+  print(test_workout)
