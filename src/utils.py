@@ -8,15 +8,16 @@ class WeekType(enum.Enum) :
   TAPER = 4
 
 class WorkoutType(enum.Enum) :
-    BASE = 1
-    INTERVALS = 2
-    LONG_RUN = 3
-    RECOVERY_RUN = 4
-    REST = 5
-    SPEED = 6
+  BASE = 1
+  INTERVALS = 2
+  LONG_RUN = 3
+  RECOVERY_RUN = 4
+  REST = 5
+  SPEED = 6
+  RACE = 7
 
 def findMonday(date : datetime.date, of_next_week : bool = False) -> datetime.date :
-   if of_next_week :
-      return date - datetime.timedelta(date.weekday() + 7)
-   else :
-      return date - datetime.timedelta(date.weekday())
+  if of_next_week :
+    return date - datetime.timedelta(date.weekday() + 7)
+  else :
+    return date - datetime.timedelta(date.weekday())

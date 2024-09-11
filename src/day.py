@@ -28,9 +28,9 @@ class Day:
         self.day_name = 'SUNDAY'
 
   def __str__(self) -> str:
-    return f"{self.day_name} {self.date} : {str(self.workout)} \n"
-
+    return f"{self.day_name} {self.date} : {self.workout}\n"
+  
 if __name__ == "__main__":
   test_date = datetime.date(2024, 9, 9)
-  test_day = Day(test_date, workout = Workout(utils.WorkoutType.BASE))
+  test_day = Day(test_date, workout = Workout(utils.WorkoutType.BASE, volume=10))
   print(test_day)
