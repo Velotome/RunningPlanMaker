@@ -10,7 +10,7 @@ Disclaimer : While I strived to make the best plan possible, I'm not a trained p
 
 ## Upcoming features
 
-- UI (in progress)
+- UI (in progress and I don't know what I'm doing)
 - Fully configurable plan generation
 - Detailed workout generation with multiple kind of workout to choose from
 - MAYBE cherry pick and customized individual workout from the app but might be too tedious to use. Since we do not auto log the workouts, I think letting the user do as he/she wants is better 
